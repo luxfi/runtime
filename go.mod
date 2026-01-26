@@ -5,7 +5,7 @@ go 1.25.5
 require (
 	github.com/luxfi/ids v1.2.9
 	github.com/luxfi/metric v1.4.11
-	github.com/luxfi/validators v0.0.0
+	github.com/luxfi/validators v1.0.0
 	github.com/luxfi/vm v1.0.20
 	github.com/luxfi/warp v1.18.5
 )
@@ -48,5 +48,3 @@ require (
 	google.golang.org/protobuf v1.36.11 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 )
-
-replace github.com/luxfi/validators => ../validators

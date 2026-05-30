@@ -58,8 +58,14 @@ type Runtime struct {
 	// CChainID is the C-Chain identifier
 	CChainID ids.ID `json:"cChainID"`
 
-	// XAssetID is the primary asset ID (X-chain native, typically LUX)
-	XAssetID ids.ID `json:"xAssetID"`
+	// UTXOAssetID is the primary network's UTXO fee asset — burned to
+	// pay fees on P-chain (CreateChainTx, AddChainValidatorTx, …) and
+	// X-chain transfers. Sourced from the chain's genesis (the X-chain's
+	// native asset by upstream convention; on a sovereign L1 it's
+	// whatever native the chain bootstraps with — LUX on Lux primary,
+	// LQDTY on a Liquidity-sovereign primary). Same number on P and X
+	// by construction; named for the function, not the chain.
+	UTXOAssetID ids.ID `json:"utxoAssetID"`
 
 	// ChainDataDir is the directory for chain-specific data
 	ChainDataDir string `json:"chainDataDir"`
@@ -162,7 +168,7 @@ type IDs struct {
 	ChainID      ids.ID
 	NodeID       ids.NodeID
 	PublicKey    []byte
-	XAssetID     ids.ID
+	UTXOAssetID     ids.ID
 	ChainDataDir string `json:"chainDataDir"`
 }
 
@@ -230,7 +236,7 @@ func (r *Runtime) GetAssetID() ids.ID {
 	if r == nil {
 		return ids.Empty
 	}
-	return r.XAssetID
+	return r.UTXOAssetID
 }
 
 func (r *Runtime) GetChainDataDir() string {

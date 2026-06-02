@@ -1,7 +1,5 @@
 github.com/Microsoft/go-winio v0.6.2 h1:F2VQgta7ecxGYO8k3ZZz3RS8fVIXVxONVUPlNERoyfY=
 github.com/Microsoft/go-winio v0.6.2/go.mod h1:yd8OoFMLzJbo9gZq8j5qaps8bJ9aShtEA8Ipt1oGCvU=
-github.com/ProjectZKM/Ziren/crates/go-runtime/zkvm_runtime v0.0.0-20251230134950-44c893854e3f h1:a5PUgHGinaD6XrLmIDLQmGHocjIjBsBAcR5gALjZvMU=
-github.com/ProjectZKM/Ziren/crates/go-runtime/zkvm_runtime v0.0.0-20251230134950-44c893854e3f/go.mod h1:ioLG6R+5bUSO1oeGSDxOV3FADARuMoytZCSX6MEMQkI=
 github.com/ProjectZKM/Ziren/crates/go-runtime/zkvm_runtime v0.0.0-20260215031811-a0ab0b218a81 h1:TBzelXBdnzDy+HCrBMcomEnhrmigkWOI1/mIPCi2u4M=
 github.com/ProjectZKM/Ziren/crates/go-runtime/zkvm_runtime v0.0.0-20260215031811-a0ab0b218a81/go.mod h1:ioLG6R+5bUSO1oeGSDxOV3FADARuMoytZCSX6MEMQkI=
 github.com/cloudflare/circl v1.6.3 h1:9GPOhQGF9MCYUeXyMYlqTR6a5gTrgR/fBLXvUgtVcg8=
@@ -36,8 +34,6 @@ github.com/luxfi/constants v1.4.3 h1:bcqUO8twMOhHWCgN/RbjfWulVPbvUQcxDkssaRrCx4g
 github.com/luxfi/constants v1.4.3/go.mod h1:ENkJ121cmDEkwQPDiKK4QhnTnW9u37PGpepbrdVcAmc=
 github.com/luxfi/container v0.0.4 h1:BXhF82WyfqVP5mjlNcr7tP0Fcnvl0Ap1rkiu+rq5XuM=
 github.com/luxfi/container v0.0.4/go.mod h1:Z3SpmMF5d4t77MM0nHYXURpn+EMVaeu1fhbd/3BGaek=
-github.com/luxfi/crypto v1.17.39 h1:dDmktYOD/sU6WjIpitIfuHp7mRbc3izOsyJrQ1c5eOQ=
-github.com/luxfi/crypto v1.17.39/go.mod h1:mChLWmW4CLR1wAN6CeJTveCzUv0DTzGQnYgq01x3W0U=
 github.com/luxfi/crypto v1.19.0 h1:VtH6kvZrCEjCnkHPkhExDU+GJ0ZulYX4rnA+lXJdJHw=
 github.com/luxfi/crypto v1.19.0/go.mod h1:ee525i8Recbpb0jVTDZYZBr1MmvJ27OITJHZ/nlNMBw=
 github.com/luxfi/database v1.17.38 h1:HsjHoUyQI+vn61HNFyyWo/fw+wkd/I7E8LAdIvmN7BU=
@@ -46,8 +42,6 @@ github.com/luxfi/geth v1.16.69 h1:CHO6xTZ+A+3itk94ts4uyVRJajNVP3RxWTjJp5qGOlk=
 github.com/luxfi/geth v1.16.69/go.mod h1:8eEO1hW5sa6OH2VeCMaCPnRz28JBxFvCPBCWPLsU2ck=
 github.com/luxfi/ids v1.2.9 h1:+yjdhXW99drnd2Zlp1u/p8k3G23W3/1btJQ4ogHawUI=
 github.com/luxfi/ids v1.2.9/go.mod h1:khJOEdOPxd22yn0jcVrnbX1ADa0GHn5Y74gvCzN5BYc=
-github.com/luxfi/log v1.4.0 h1:Bue5iQPcByBzCzZJFoTuExEKatZ5inv8hQ6FKjvODeo=
-github.com/luxfi/log v1.4.0/go.mod h1:64IE3xRMJcpkQwnPUfJw3pDj7wU0kRS7BZ9wM7R72jk=
 github.com/luxfi/log v1.4.1 h1:rIfFRodb9jrD/w7KayaUk0Oc+37PaQQdKEEMJCjR8gw=
 github.com/luxfi/log v1.4.1/go.mod h1:64IE3xRMJcpkQwnPUfJw3pDj7wU0kRS7BZ9wM7R72jk=
 github.com/luxfi/math v1.4.0 h1:/sb7Grw3hfO+5INWAWdB95jTvCeXg8fSQxsxDzcFtd4=

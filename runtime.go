@@ -63,7 +63,7 @@ type Runtime struct {
 	// X-chain transfers. Sourced from the chain's genesis (the X-chain's
 	// native asset by upstream convention; on a sovereign L1 it's
 	// whatever native the chain bootstraps with — LUX on Lux primary,
-	// LQDTY on a Liquidity-sovereign primary). Same number on P and X
+	// the L1's native on each downstream L1). Same number on P and X
 	// by construction; named for the function, not the chain.
 	UTXOAssetID ids.ID `json:"utxoAssetID"`
 

@@ -24,7 +24,7 @@ require (
 	github.com/luxfi/compress v0.0.5 // indirect
 	github.com/luxfi/concurrent v0.0.3 // indirect
 	github.com/luxfi/consensus v1.25.0 // indirect
-	github.com/luxfi/constants v1.5.8-0.20260603055356-93c2c2ceb9ca // indirect
+	github.com/luxfi/constants v1.5.8 // indirect
 	github.com/luxfi/container v0.0.4 // indirect
 	github.com/luxfi/crypto v1.19.17 // indirect
 	github.com/luxfi/database v1.18.3 // indirect

@@ -1,4 +1,4 @@
-# LLM.md - Hanzo Runtime
+# Hanzo Runtime
 
 ## Overview
 Go module: github.com/luxfi/runtime

@@ -58,6 +58,20 @@ type Runtime struct {
 	// CChainID is the C-Chain identifier
 	CChainID ids.ID `json:"cChainID"`
 
+	// GovernanceController is the 20-byte EVM address of the DEX governance
+	// authority — the ONLY caller that may toggle the 0x9999 settlement kill
+	// switches (setHaltGlobal/Market/Asset) and seed the settlement pots. It is a
+	// per-NETWORK identity (each network deploys its own Governor/Timelock/multisig
+	// CONTRACT), resolved at chain wiring from the host's deployment topology and
+	// surfaced to the precompile via contract.AtomicState.GovernanceController() —
+	// the SAME runtime seam CChainID/DChainID flow through, with ZERO per-net config
+	// file. It MUST be a governance CONTRACT, NEVER an EOA derivable from any dev
+	// mnemonic. The zero value is the safe default: an unset governance authority
+	// makes the halt switches uncallable (fail-closed — no single key can DoS the
+	// DEX), never fail-open. Typed ids.ShortID ([20]byte) so this low consensus leaf
+	// stays free of any geth import; it is the same 20 bytes as a geth common.Address.
+	GovernanceController ids.ShortID `json:"governanceController"`
+
 	// UTXOAssetID is the primary network's UTXO fee asset — burned to
 	// pay fees on P-chain (CreateChainTx, AddChainValidatorTx, …) and
 	// X-chain transfers. Sourced from the chain's genesis (the X-chain's
@@ -230,6 +244,16 @@ func (r *Runtime) GetCChainID() ids.ID {
 		return ids.Empty
 	}
 	return r.CChainID
+}
+
+// GetGovernanceController returns the DEX governance authority address (the sole
+// caller permitted to halt 0x9999 settlement / seed its pots), or the zero ShortID
+// when unset — which the precompile treats as fail-closed (no halt authority).
+func (r *Runtime) GetGovernanceController() ids.ShortID {
+	if r == nil {
+		return ids.ShortEmpty
+	}
+	return r.GovernanceController
 }
 
 func (r *Runtime) GetAssetID() ids.ID {

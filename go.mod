@@ -6,7 +6,7 @@ require (
 	github.com/luxfi/ids v1.3.2
 	github.com/luxfi/metric v1.8.1
 	github.com/luxfi/validators v1.3.1
-	github.com/luxfi/vm v1.3.1
+	github.com/luxfi/vm v1.3.16
 	github.com/luxfi/warp v1.24.1
 )
 
@@ -24,12 +24,12 @@ require (
 	github.com/luxfi/cache v1.3.1 // indirect
 	github.com/luxfi/compress v0.1.1 // indirect
 	github.com/luxfi/concurrent v0.1.1 // indirect
-	github.com/luxfi/consensus v1.36.2 // indirect
+	github.com/luxfi/consensus v1.36.81 // indirect
 	github.com/luxfi/constants v1.6.2 // indirect
-	github.com/luxfi/container v0.2.1 // indirect
+	github.com/luxfi/container v0.2.2 // indirect
 	github.com/luxfi/crypto v1.20.2 // indirect
-	github.com/luxfi/database v1.21.1 // indirect
-	github.com/luxfi/geth v1.20.1 // indirect
+	github.com/luxfi/database v1.21.5 // indirect
+	github.com/luxfi/geth v1.20.2 // indirect
 	github.com/luxfi/log v1.4.3 // indirect
 	github.com/luxfi/math v1.5.1 // indirect
 	github.com/luxfi/math/big v0.1.0 // indirect

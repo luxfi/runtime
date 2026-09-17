@@ -127,17 +127,17 @@ type BCLookup interface {
 
 // Keystore provides key management
 type Keystore interface {
-	GetDatabase(username, password string) (interface{}, error)
+	GetDatabase(username, password string) (any, error)
 	NewAccount(username, password string) error
 }
 
 // Logger provides logging functionality
 type Logger interface {
-	Debug(msg string, fields ...interface{})
-	Info(msg string, fields ...interface{})
-	Warn(msg string, fields ...interface{})
-	Error(msg string, fields ...interface{})
-	Fatal(msg string, fields ...interface{})
+	Debug(msg string, fields ...any)
+	Info(msg string, fields ...any)
+	Warn(msg string, fields ...any)
+	Error(msg string, fields ...any)
+	Fatal(msg string, fields ...any)
 	IsZero() bool
 }
 
@@ -333,7 +333,7 @@ type contextKey struct{}
 
 // WithContext returns a new context.Context with the runtime embedded.
 // This allows extracting chain info from a stdlib context using FromContext.
-func WithContext(ctx context.Context, chainCtx interface{}) context.Context {
+func WithContext(ctx context.Context, chainCtx any) context.Context {
 	if r, ok := chainCtx.(*Runtime); ok {
 		return context.WithValue(ctx, contextKey{}, r)
 	}

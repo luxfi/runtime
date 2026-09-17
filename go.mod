@@ -1,6 +1,6 @@
 module github.com/luxfi/runtime
 
-go 1.26.4
+go 1.27.1
 
 require (
 	github.com/luxfi/ids v1.3.2
